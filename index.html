@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian News Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="Company-logo">
+                <img src="ANN.png" alt="Company">
+            </a>
+            <div class="nav-link">
+                <ul class="flex">
+                <div class="link-hover_nav-item items " id="ipl" onclick="onNavIttemClick('ipl')">IPL</div>
+                <div class="link-hover_nav-item items" id="finance" onclick="onNavIttemClick('finance')">Finance</div>
+                <div class="link-hover_nav-item items" id="politics" onclick="onNavIttemClick('politics')">Politics</div>
+                <div class="link-hover_nav-item items" id="technology" onclick="onNavIttemClick('technology')">Technology</div>
+                <div class="link-hover_nav-item items" id="sharemarket" onclick="onNavIttemClick('sharemarket')">Share Market</div>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+            <input type="text" id="search-text" class="news-input" placeholder="Asian-News-Network">
+            <button id = "search-button" class="Search-Button">Search🔍</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="card-container">
+
+        </div>
+    </main>
+    <template id="news-template">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 28/02/2024</h6>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis velit accusamus doloribus voluptatum adipisci quisquam illo recusandae fugit eaque eius, deserunt maxime consequuntur aliquam soluta, voluptas aspernatur quidem et architecto!
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <footer class="Copy"><P>Copy Right @ASIAN_NEWS_NETWORK_LTD</P></footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
